@@ -1,11 +1,11 @@
 /// <reference path="../typings/index.d.ts" />
-var express = require('express');
-var app = express();
+import * as express from 'express'
+var app: express.Express = express();
 
-var firstController = require('./first_controller');
+import {index} from './first_controller'
 var secondController = require('./second_controller');
 
-app.get('/', firstController.index);
+app.get('/', index);
 app.get('/other', secondController.other);
 
 app.listen(3000);
