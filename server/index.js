@@ -1,7 +1,8 @@
 var express = require('express');
-var firstController = require('./first_controller');
+var controller = require('./controller');
 
 var app = express();
-app.get('/', firstController.index);
+app.get('/', controller.index);
 
 app.listen(3000);
+console.log('Started server on port 3000');
