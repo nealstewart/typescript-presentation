@@ -1,5 +1,5 @@
 /// <reference path="../typings/index.d.ts" />
-var express = require('express');
+import * as express from 'express'
 var controller = require('./controller');
 
 var app = express();
