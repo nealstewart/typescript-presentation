@@ -1,6 +1,6 @@
 /// <reference path="../typings/index.d.ts" />
 import * as express from 'express'
-var controller = require('./controller');
+import {index} from 'controller'
 
 var app = express();
 app.get('/', controller.index);
